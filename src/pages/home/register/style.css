@@ -1,0 +1,83 @@
+.register-page {
+  background-color: rgb(221, 185, 185);
+  width: 100%;
+  min-height: 700px;
+  margin-top: -11px;
+  position: relative;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/922/804/907/light-laptop-notebook-lighting-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.register {
+  margin-top: 6rem;
+  width: 60%;
+  height: 550px;
+  background: rgb(228, 225, 225);
+  border-radius: 1rem;
+  position: absolute;
+  opacity: 0.85;
+  left: 20%;
+  bottom: 20%;
+  top: -53px;
+}
+.register-page .totstify-register {
+  float: right;
+  padding: 10px;
+  color: red;
+  margin-right: 10px;
+}
+.register .title {
+  color: #212529;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0px 10px;
+  text-align: center;
+  font-family: math;
+
+  font-style: oblique;
+}
+
+.register .title-input {
+  font-family: var(--main-font);
+  font-size: var(--main-fsize);
+  margin-left: 30px;
+  margin-bottom: 5px;
+  color: #ff4800;
+  line-height: 24px;
+  font-family: math;
+  font-size: 20px;
+  font-style: italic;
+}
+
+input.form-control {
+  margin: 0 30px;
+}
+.register .btn-danger {
+  width: 200px;
+  float: right;
+  margin-right: 80px;
+}
+
+.register span#basic-addon1 {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: white;
+  margin: 1px 30px 0 0;
+  padding: 10px;
+}
+input#confirm-password {
+  margin-right: 60px;
+  border-radius: 4px;
+}
+#form-password {
+  margin-right: 60px;
+  border-radius: 4px;
+}
+
+.register-page .register a {
+  text-decoration: none;
+  display: block;
+}

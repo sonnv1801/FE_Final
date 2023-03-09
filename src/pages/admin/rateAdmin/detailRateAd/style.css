@@ -1,0 +1,58 @@
+.container-DetailRateAd {
+  margin-top: 40px;
+  width: 98%;
+  min-height: 300px;
+  margin-left: 10px;
+}
+
+.container-DetailRateAd .title-list {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 50%);
+}
+.container-DetailRateAd .box-card .card {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+.container-DetailRateAd .box-card .card-footer button {
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  margin: 0 auto;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: var(--font-dep);
+  font-weight: bold;
+}
+
+.container-DetailRateAd .btn-success i {
+  font-size: 30px;
+  margin-right: 5px;
+  line-height: 60%;
+}
+.container-DetailRateAd .row .col-sm-7 p {
+  font-family: var(--font-dep);
+  padding: 0;
+  margin: 0;
+}
+.container-DetailRateAd .box-card .text-primary {
+  font-family: var(--font-dep);
+  font-size: 20px;
+}
+.container-DetailRateAd .box-card .text-muted {
+  font-family: var(--font-dep);
+  font-size: 15px;
+}
+.container-DetailRateAd .box-card img {
+  height: 80px;
+  width: 80px;
+  box-shadow: rgb(0 0 0 / 35%) 2px 2px 5px 2px;
+}
+.container-DetailRateAd .box-card .mt-3 {
+  width: 80%;
+  margin: 0 auto;
+}

@@ -1,0 +1,71 @@
+.container-listOderAd {
+  margin-top: 40px;
+  width: 98%;
+  min-height: 300px;
+  margin-left: 10px;
+}
+
+.container-listOderAd .row .col-sm-5 {
+  padding: 0;
+}
+.container-listOderAd .row .col-sm-5 p {
+  margin: 0;
+  font-family: var(--font-dep);
+}
+.container-listOderAd .title-list {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+}
+
+.table thead tr th {
+  text-align: center;
+  font-family: var(--maint-font);
+  font-size: 20px;
+}
+.table tbody tr td {
+  text-align: center;
+  font-size: 20px;
+}
+.table tbody tr td i .btn-outline-primary {
+  font-size: 20px;
+}
+
+.table tbody tr td button {
+  margin-right: 5px;
+  width: 60px;
+}
+.table tbody tr td button i {
+  font-size: 20px;
+}
+
+.table tbody tr td p {
+  color: red;
+}
+
+.modal-content .modal-body .formgroup-body input {
+  margin: 0;
+  width: 85%;
+  margin-left: 30px;
+}
+.modal-content .modal-body input {
+  margin: 0;
+  margin-left: 30px;
+  width: 85%;
+}
+.modal-content .modal-body .formgroup-body .form-label {
+  margin-top: 5px;
+}
+.modal-content .modal-body .form-label {
+  margin-top: 5px;
+}
+.modal-content .modal-header {
+  text-align: center;
+  background: indianred;
+  color: white;
+  display: flow-root;
+}

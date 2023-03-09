@@ -1,0 +1,20 @@
+.specifications {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.specifications tr td {
+  text-align: left !important;
+  cursor: pointer;
+}
+.specifications tr td:hover {
+  background-color: rgb(250, 237, 237);
+}
+.specifications b {
+  line-height: 40px;
+  display: block;
+  font-family: var(--font-dep);
+  font-size: 23px;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+#user-app li {
+    padding: 0.3rem 0rem;
+}
+
+#user-app button {
+    padding: 0.3rem 0rem;
+    background: #4add00;
+    width: 100%;
+    color: white;
+    transition: 0.5s;
+}
+
+#admin-app a {
+    padding: 0.3rem 0rem;
+}
+
+#user-app button:hover {
+    background: #DD0000;
+}

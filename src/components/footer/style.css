@@ -1,0 +1,98 @@
+footer {
+    font-family: var(--main-font);
+    margin-top: 1rem;
+}
+
+.privacy-policy ul li {
+    padding: 0.3rem 0px;
+}
+
+.privacy-policy ul li a {
+    text-decoration: none;
+}
+
+
+.privacy-policy ul li a:hover {
+    color: var(--main-cl) !important;
+}
+
+.support-sw ul li {
+    padding: 0.3rem 0px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+}
+
+.support-sw ul li a {
+    text-decoration: none;
+}
+
+
+.support-sw ul li a:hover {
+    color: var(--main-cl) !important;
+}
+
+.support-sw .support-footer {
+    background: var(--primary-cl);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 9px;
+}
+
+.support-sw .support-footer a p {
+    color: red;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.support-sw .support-footer a strong {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.location-footer .icon-location {
+    margin-right: 0.7rem;
+    color: #007eaf;
+    font-size: 1rem;
+}
+
+.location-footer .tabs-scroll {
+    overflow-y: auto;
+    height: 250px;
+}
+
+.location-footer .tabs-scroll p:hover {
+    color: var(--main-cl) !important;
+    cursor: pointer;
+}
+
+.social .body-social a {
+    text-decoration: none;
+}
+
+.social .body-social a:hover {
+    background: var(--primary-cl) !important;
+}
+
+.social .body-social a .icon-social {
+    margin-right: 1rem;
+}
+
+.social .body-social a .icon-fb {
+    color: blue;
+}
+
+.social .body-social a .icon-yt {
+    color: red;
+}
+
+.social .body-social a .icon-tw {
+    color: #007eaf;
+}
+
+.copy-right a {
+    margin-left: 0.8rem;
+    color: #007eaf !important;
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.salient-features {
+    margin-top: 2rem;
+}
+
+.salient-features h1 {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.salient-features ul {
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.salient-features ul li {
+    letter-spacing: 0.6px;
+}
+
+
+.salient-features .content-prd-dt b {
+    font-size: 19px;
+}
+
+.salient-features .content-prd-dt p {
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+}
+
+.salient-features .content-prd-dt img {
+    width: 100%;
+}

@@ -1,0 +1,100 @@
+.container-DetailorderAd {
+  margin-top: 40px;
+  width: 98%;
+  min-height: 300px;
+  margin-left: 10px;
+}
+
+.title-detail {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--font-dep);
+  font-weight: bold;
+}
+.container-DetailorderAd .title-list {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 50%);
+}
+
+.container-DetailorderAd .table .table-dark th {
+  text-align: center !important;
+}
+.container-DetailorderAd .table thead tr th {
+  text-align: center;
+  font-family: var(--maint-font);
+  font-size: 20px;
+}
+.container-DetailorderAd .table tbody tr td {
+  text-align: center !important;
+  font-size: 20px;
+}
+
+.container-DetailorderAd .table tbody tr td button {
+  margin-right: 5px;
+  width: 40%;
+}
+.container-DetailorderAd .table tbody tr td button i {
+  padding: 0;
+  font-size: 20px;
+}
+.container-DetailorderAd .first-row {
+  width: 97.6%;
+  margin: 0 auto;
+}
+.container-DetailorderAd .first-row .col-sm-6 {
+  width: 50%;
+  font-family: var(--maint-font);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.container-DetailorderAd .foot-row {
+  width: 97.6%;
+  margin: 0 auto;
+}
+.container-DetailorderAd .foot-row .col-sm-6 {
+  width: 50%;
+  font-family: var(--maint-font);
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container-DetailorderAd h4 {
+  font-family: var(--font-dep);
+  color: var(--red-clr);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.container-DetailorderAd h5 {
+  text-decoration: underline;
+  font-family: var(--font-dep);
+  text-align: center;
+  padding: 10px;
+}
+.container-DetailorderAd .btn-success {
+  text-align: center;
+  float: right;
+  margin: 5px 10px;
+  display: flex;
+}
+.container-DetailorderAd .btn-success i {
+  font-size: 30px;
+  margin-right: 5px;
+  line-height: 60%;
+}
+.container-DetailorderAd .row .col-sm-7 p {
+  font-family: var(--font-dep);
+  padding: 0;
+  margin: 0;
+}

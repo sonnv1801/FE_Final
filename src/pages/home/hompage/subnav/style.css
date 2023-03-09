@@ -1,0 +1,22 @@
+.nav-title-header {
+    background: white;
+    box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.nav-title-header .sub-nav-body {
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
+
+.nav-title-header .sub-nav-body p {
+    margin: 9px;
+}
+
+.nav-title-header .sub-nav-body p a {
+    text-decoration: none;
+    color: #333399;
+    font-weight: bold;
+}

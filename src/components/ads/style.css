@@ -1,0 +1,27 @@
+.ads-page {
+  width: 98%;
+  border-radius: 10px;
+  color: #212529;
+  font-size: 14px;
+  line-height: 25.2px;
+  text-align: left;
+  padding: 0;
+}
+.ads-page .left-ads {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.ads-page img {
+  width: 100%;
+
+  padding: 0;
+  border-radius: 5px;
+  color: #212529;
+  display: inline;
+  font-size: 14px;
+  line-height: 25.2px;
+  text-align: left;
+  margin-top: 1.5px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.sidebar {
+  width: 288px;
+  height: 545px;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px 2px #888888;
+  border-radius: 10px;
+}
+.sidebar .title_sidebar {
+  background: rgb(226, 62, 62);
+  height: 80px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: var(--main-font);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+.sidebar .title_sidebar .avarta-sidebar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  width: 60px;
+  height: 60px;
+  background-image: url("https://img.meta.com.vn/Data/image/2021/04/12/sinh-nhat-bac-ho-3.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  justify-content: center;
+}
+
+.sidebar .title_sidebar .username-sidebar {
+  margin-top: 15px;
+  width: 70%;
+}
+.sidebar .title_sidebar .sidebar .menu {
+  width: 100%;
+}
+
+.sidebar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+.sidebar .menu .item a {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 40px;
+  border-bottom: 1px solid;
+  font-family: var(--main-font);
+}
+.sidebar .menu .item a:hover {
+  background-color: rgb(245, 192, 192);
+  transition: 0.4s ease;
+  color: black;
+  margin-left: 20px;
+}
+.sidebar .menu .item i {
+  margin-right: 15px;
+}
+.sidebar .menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  transition: 0.3s ease;
+}

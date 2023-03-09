@@ -1,0 +1,44 @@
+.body-product .sub-body-product {
+    display: flex;
+    justify-content: left;
+}
+
+
+.body-product .sub-body-product select {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.body-product .sub-body-arrange {
+    margin-top: 1rem;
+    clear: both;
+    display: flex;
+}
+
+.body-product .sub-body-arrange .search-form {
+    position: relative;
+
+}
+
+.body-product .sub-body-arrange .search-form button {
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+.body-product .sub-body-arrange a {
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px
+}
+
+.body-product .sub-body-arrange a:hover {
+    border: 1px solid red;
+    color: red;
+}

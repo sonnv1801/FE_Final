@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+:root {
+  --main-cl: #528352;
+  --primary-cl: #ffcc00;
+  --second-cl: #faf5e9;
+  --black-cl: #180303;
+  --main-font: 'Mukta', sans-serif;
+  --font-dep: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --main-fsize: 14px;
+  --title-fsize: 18px;
+  --red-clr: #dd0000;
+}

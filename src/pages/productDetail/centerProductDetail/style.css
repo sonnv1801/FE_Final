@@ -1,0 +1,172 @@
+#clicked {
+    background: green;
+    color: white;
+}
+
+.body-prd-dt {
+    font-family: var(--main-font);
+}
+
+.body-prd-dt a {
+    float: right;
+    width: 82%;
+    color: black;
+}
+
+.body-prd-dt .prd-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    clear: both;
+    margin-bottom: 1rem;
+}
+
+.body-prd-dt .prd-price .sub-price {
+    background: red;
+    border-radius: 5px;
+
+}
+
+.body-prd-dt .prd-price .sub-price h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
+.body-prd-dt .prd-price .sub-installment {
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.body-prd-dt .prd-price .sub-installment h1 {
+    font-size: 13px;
+    padding: 10px;
+    margin: 0;
+    line-height: 28px;
+
+}
+
+.body-orther-phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.body-orther-phone p {
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+
+}
+
+.body-orther-phone .sub-orther-phone {
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 15%);
+}
+
+.body-orther-phone .sub-orther-phone:hover {
+    /* background: green; */
+    /* color: white; */
+}
+
+.body-prd-dt .voucher-prd-dt {
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt .sub-header {
+    background: #f7941e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt .sub-header-other {
+    background: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt .sub-header p svg {
+    margin-right: 0.5rem;
+}
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt .sub-header-other p,
+.body-prd-dt .voucher-prd-dt .sub-prd-dt .sub-header p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt ul {
+    list-style-type: none;
+}
+
+
+
+.body-prd-dt .voucher-prd-dt .sub-prd-dt ul li::before {
+    content: 'KM ';
+    color: #fff;
+    background: #f7941e 0% 0% no-repeat padding-box;
+    box-shadow: 0 4px 6px #00000029;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 3px;
+    line-height: 1.2;
+    display: block;
+    width: 10%;
+    margin-bottom: 0.5rem;
+
+}
+
+.body-prd-dt .btn-payment:hover {
+    background: green;
+}
+
+.body-prd-dt .btn-payment {
+    width: 100%;
+    background: red;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+
+.body-prd-dt .btn-payment a {
+    text-decoration: none;
+    float: none;
+    color: white;
+}
+
+.body-prd-dt .btn-payment a span {
+    display: block;
+    font-size: 15px;
+}
+
+.body-prd-dt .installment-btn {
+    display: flex;
+}
+
+.body-prd-dt .installment-btn button {
+    margin: 10px;
+    padding: 5px;
+    background: blue;
+}

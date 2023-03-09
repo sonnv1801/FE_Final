@@ -1,0 +1,36 @@
+.my-rate {
+    margin-top: 1rem;
+}
+
+.my-rate b {
+    font-size: 16px;
+    display: block;
+}
+
+.my-rate .text-rate {
+    font-size: 20px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.my-rate .star-rate {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.my-rate .my-text-rate {
+    width: 100%;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-rate .btn-rate {
+    padding: 5px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}

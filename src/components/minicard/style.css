@@ -1,0 +1,15 @@
+/* .mini-card {
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+.mini-card a {
+    padding: 10px;
+}
+
+
+.mini-card a img {
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,54 @@
+.shop-container {
+    width: 90%;
+    min-height: 500px;
+    /* background: pink; */
+    margin: 0 auto;
+    font-family: var(--main-font);
+}
+
+.shop-container .shop-product {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.shop-container .see-more {
+    display: flex;
+    justify-content: center;
+}
+
+.shop-container .see-more button {
+    padding: 10px;
+    width: 20%;
+    border: none;
+    background: red;
+    border-radius: 25px;
+
+}
+
+.shop-container .see-more button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.search-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.search-container form {
+    text-align: center;
+    position: relative;
+}
+
+.search-container form button {
+    position: absolute;
+    right: 114px;
+}
+
+.search-container form input {
+    width: 80%;
+    display: inline;
+}

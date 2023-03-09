@@ -1,0 +1,18 @@
+.profile_container {
+  width: 100%;
+  margin-top: 6rem;
+  /* height: 100vh; */
+}
+
+.profile_container .user-container-profile {
+  display: flex;
+}
+
+.profile_container .user-container-profile .left-container {
+  margin-left: 50px;
+}
+
+.profile_container .user-container-profile .right-container {
+  width: 50%;
+  margin-left: 10px;
+}

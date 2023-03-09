@@ -1,0 +1,97 @@
+.rate-product {
+    margin-top: 1rem;
+}
+
+.rate-product b {
+    font-size: 21px;
+}
+
+.rate-product .header-rate .sub-header-left {
+    border-right: 1px solid #d8d8d8
+}
+
+.header-rate .sub-header-left {
+    width: 40%;
+    float: left;
+}
+
+
+.header-rate .sub-header-left b {
+    font-size: 53px;
+    display: block;
+    text-align: center;
+}
+
+
+.header-rate .sub-header-left b svg {
+    color: rgb(255, 202, 63);
+    font-size: 51px;
+}
+
+.header-rate .sub-header-left i {
+    justify-content: center;
+    display: flex;
+}
+
+.header-rate .sub-header-right {
+    float: left;
+    width: 50%;
+}
+
+.header-rate .sub-header-right .rating {
+    width: 50%;
+    height: 13px;
+    background: red;
+    margin: 0 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.header-rate .sub-header-right {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.rate-product .vote-rate {
+    clear: both;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.rate-product .vote-rate h1 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.rate-product .vote-rate button {
+    width: 28%;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.rate-product .body-rate {
+    margin-top: 1rem;
+}
+
+.rate-product .body-rate p {
+    font-size: 20px;
+}
+
+.body-rate .sub-body-rate {
+    overflow: auto;
+    height: 200px;
+}
+
+.body-rate .sub-body-rate .info-rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-rate .sub-body-rate .info-rate b {
+    color: rgb(255, 202, 63);
+    margin-left: 1rem;
+    margin-top: -6px;
+}

@@ -1,0 +1,32 @@
+.every-flash-sale {
+    background: linear-gradient(to right, #ffffff, #fff3f4);
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+    box-shadow: 0px 2px 11px 2px #958f8f
+}
+
+.every-flash-sale .header-sale {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+.every-flash-sale .header-sale img {
+    width: 40%;
+}
+
+.every-flash-sale .header-sale h1 {
+    margin: 0;
+    color: rgb(237, 102, 102);
+}
+
+.every-flash-sale .product-sale {
+    margin: 1rem 0;
+    padding: 0rem 2rem;
+}
+
+.slick-slider .slick-initialized button {
+    background-color: red !important;
+}

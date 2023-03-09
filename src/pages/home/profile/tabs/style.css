@@ -1,0 +1,10 @@
+.tabs_container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: lightblue;
+}
+.tab-content {
+  border: 1px solid lightblue;
+}

@@ -1,0 +1,83 @@
+.body-left-payment p {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.body-left-payment p a {
+  text-decoration: none;
+  color: black;
+}
+
+.body-left-payment .vocher-payment {
+  background: #c3aeae;
+  clear: both;
+  border: 1px solid orangered;
+}
+
+.body-left-payment .vocher-payment .sub-vocher-payment {
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+.body-left-payment .body-payment {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.body-payment .infomation-users {
+  width: 50%;
+}
+.body-payment .infomation-users .formgroup-body {
+  width: 80%;
+}
+.body-payment .infomation-product {
+  width: 50%;
+  box-shadow: 3px 3px 7px 2px rgba(226, 14, 14, 0.5);
+  background-color: rgb(253, 235, 235);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.infomation-product b {
+  font-size: 1.1rem;
+}
+
+.infomation-product .quantity-prd-payment {
+  font-weight: bold;
+}
+
+.infomation-product .term {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.infomation-product .term input {
+  margin-right: 0.6rem;
+}
+
+.infomation-product .term {
+  color: blue;
+}
+
+.infomation-product .order-payment {
+  width: 50%;
+  padding: 5px;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+}
+
+.infomation-product .order-payment:hover {
+  background: rgb(250, 48, 48);
+  color: white;
+  transition: 0.5s ease;
+}
+
+.infomation-product .total-payment {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}

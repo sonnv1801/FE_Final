@@ -1,0 +1,121 @@
+.css-18k87ye-MuiTypography-root {
+  color: #e10c00 !important;
+}
+
+.container-card {
+  padding: 1rem 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.container-card:hover {
+  box-shadow: #e10c00 0px 2px 1px;
+  margin: 0;
+  padding: 0;
+}
+
+#color-tile-card span {
+  color: orange !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  /* width: 200px; */
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+
+.card .card-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.card .card-img-top {
+  margin-top: 5px;
+}
+
+.card-body {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+.card-body a {
+  width: 65px;
+  height: 22px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+
+  margin-left: 100px;
+  padding: 0;
+}
+
+.card-body p {
+  text-align: left;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-body .price {
+  font-size: 10px;
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+/* card infor*/
+.card .card-info {
+  background: pink;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+/* hover card-> card infor */
+.card:hover .card-info {
+  display: block;
+}
+
+/* voucher */
+.card .voucher {
+  width: 55px;
+  background-color: yellow;
+  box-shadow: rgb(60 64 67 / 10%) 0px 1px 0px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 3px 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  color: red;
+}
+
+#rates span {
+  color: orange !important;
+}
+
+.MuiCardMedia-root.sub-card-container.css-muxve-MuiCardMedia-root {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  border: 1px solid;
+  margin-left: 10px;
+}

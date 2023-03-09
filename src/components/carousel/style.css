@@ -1,0 +1,9 @@
+#carousel-body {
+  border-radius: 3px;
+}
+.carousel .carousel-inner .carousel-item {
+  border-radius: 10px;
+}
+.carousel .carousel-inner img {
+  border-radius: 10px;
+}

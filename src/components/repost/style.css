@@ -1,0 +1,32 @@
+.repost {
+  width: 285px;
+  height: 460px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: #3c4043 1px 2px 2px 2px;
+  color: #212529;
+  font-size: 14px;
+  line-height: 25.2px;
+  text-align: left;
+}
+.repost .repost-title {
+  border-radius: 10px 10px 0px 0px;
+  color: #dd0000;
+  font-family: Times New Roman;
+  font-weight: bold;
+  line-height: 19.2px;
+  margin: 0px 0px 0px -1px;
+  text-align: center;
+  font-size: var(--main-fsize);
+}
+.repost img {
+  width: 98%;
+  border-radius: 5px;
+  color: #212529;
+  display: inline;
+  font-size: 14px;
+  line-height: 25.2px;
+  text-align: left;
+  margin-top: 1.5px;
+  margin-left: 3px;
+}

@@ -1,0 +1,59 @@
+.header-order-container {
+  padding: 10px;
+}
+
+.header-order-container p {
+  margin-top: 1rem;
+}
+
+.header-order-container .sub-header-order {
+  border: 1px dashed;
+  padding: 15px;
+  position: relative;
+}
+
+.header-order-container .sub-header-order p {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.4rem;
+  margin: 1rem;
+  background: red;
+  color: white;
+  border-radius: 0.6rem;
+  font-weight: 600;
+}
+
+.header-order-container .sub-header-order button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.4rem;
+  margin: 1rem;
+  background: white(255, 85, 0);
+  color: green;
+  border-radius: 0.3rem;
+  border: 1px solid red;
+}
+
+.header-order-container .sub-header-order button:hover {
+  background: orangered;
+  color: white;
+}
+
+.sub-header-order span {
+  display: block;
+  font-weight: 600;
+}
+
+.sub-header-order span::after {
+  content: ':';
+}
+
+.sub-header-order b {
+  color: red;
+}
+
+.footer-order .table tbody tr td {
+  font-size: 17px;
+}

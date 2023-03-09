@@ -1,0 +1,57 @@
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">>";
+    color: var(--second-cl);
+}
+
+.nav-container-prd {
+    background: var(--main-cl);
+    color: var(--primary-cl);
+    height: 50px;
+    margin-top: -11px;
+}
+
+.nav-container-prd .menu-prd-detail {
+    width: 50px;
+    float: left;
+}
+
+.nav-container-prd .nav-product-detail {
+    width: 200px;
+    float: left;
+}
+
+.nav-container-prd .nav-menu {
+    padding: 0 50px;
+}
+
+.nav-container-prd .menu-prd-detail p {
+    margin: 0;
+    position: relative;
+}
+
+.nav-container-prd .menu-prd-detail p svg {
+    width: 40px;
+    height: 48px;
+    cursor: pointer;
+
+}
+
+.nav-container-prd .menu-prd-detail ul {
+    position: absolute;
+    display: none;
+}
+
+.menu-prd-detail:hover ul {
+    display: block;
+}
+
+.nav-container-prd .nav-menu nav {
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-container-prd .nav-menu nav .body-product-detail .list-product-detail a {
+    text-decoration: none !important;
+    color: var(--primary-cl);
+}

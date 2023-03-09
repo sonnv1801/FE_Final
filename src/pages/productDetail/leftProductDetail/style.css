@@ -1,0 +1,60 @@
+.clicked {
+    border: 1px solid red;
+}
+
+.header-prd-dt h1 {
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.header-prd-dt p {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.header-prd-dt p i {
+    margin-top: 0.2rem;
+}
+
+.header-prd-dt .image-prd img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.header-prd-dt .image-prd .sub-image-prd {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 1rem;
+}
+
+.header-prd-dt .image-prd .sub-image-prd img {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.header-prd-dt .image-prd .sub-image-prd::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+    height: 5px;
+}
+
+.header-prd-dt .image-prd .sub-image-prd::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: red;
+
+}
+
+.header-prd-dt .image-prd .sub-image-prd::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.header-prd-dt .banner-prd-dt img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+}

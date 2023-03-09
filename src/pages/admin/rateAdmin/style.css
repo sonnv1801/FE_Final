@@ -1,0 +1,50 @@
+.container-RatingAd {
+  margin-top: 40px;
+  width: 98%;
+  min-height: 300px;
+  margin-left: 10px;
+}
+
+.container-RatingAd .row .col-sm-5 {
+  padding: 0;
+}
+.container-RatingAd .row .col-sm-5 p {
+  margin: 0;
+  font-family: var(--font-dep);
+}
+.container-RatingAd .title-list {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+}
+.container-RatingAd .col-sm-7 {
+  font-family: var(--font-dep);
+}
+.container-RatingAd .table thead tr th {
+  text-align: center;
+  font-family: var(--maint-font);
+  font-size: 20px;
+}
+.container-RatingAd .table tbody tr td {
+  text-align: center;
+  font-size: 20px;
+}
+.container-RatingAd .table tbody tr td i .btn-outline-primary {
+  font-size: 20px;
+}
+
+.container-RatingAd .table tbody tr td button {
+  margin-right: 5px;
+  width: 60px;
+}
+.container-RatingAd .table tbody tr td button i {
+  font-size: 20px;
+}
+
+.container-RatingAd .table tbody tr td p {
+  color: red;
+}

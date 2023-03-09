@@ -1,0 +1,12 @@
+.container-product-detail {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 500px;
+    /* background: pink; */
+    font-family: var(--main-font);
+}
+
+.container-product-detail #color-tile-card-dt span {
+    color: orange !important;
+    font-size: 1.5rem !important;
+}
