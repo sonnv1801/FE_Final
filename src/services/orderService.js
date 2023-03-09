@@ -1,5 +1,5 @@
 import Axios from 'axios';
-const API = 'http://localhost:8000/v1/order';
+const API = 'https://maizoshop.onrender.com/v1/order';
 
 export class OrderService {
   create(item, accessToken) {

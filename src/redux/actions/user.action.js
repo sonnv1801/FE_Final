@@ -112,7 +112,7 @@ export const logoutUser = async (
 ) => {
   dispatch(logoutStart());
   try {
-    await axiosJWT.post('http://localhost:8000/v1/auth/logout', id, {
+    await axiosJWT.post('https://maizoshop.onrender.com/v1/auth/logout', id, {
       headers: { token: `Bearer ${accessToken}` },
     });
     dispatch(logoutSuccess());

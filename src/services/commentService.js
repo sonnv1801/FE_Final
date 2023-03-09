@@ -1,5 +1,5 @@
 import Axios from 'axios';
-const API = 'http://localhost:8000/v1/comment';
+const API = 'https://maizoshop.onrender.com/v1/comment';
 
 export class CommentProduct {
   getCmt(item) {

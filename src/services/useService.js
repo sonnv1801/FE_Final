@@ -1,6 +1,6 @@
 import Axios from 'axios';
-const API = 'http://localhost:8000/v1/auth';
-const APIUser = 'http://localhost:8000/v1/user';
+const API = 'https://maizoshop.onrender.com/v1/auth';
+const APIUser = 'https://maizoshop.onrender.com/v1/user';
 
 export class UserService {
   Login(user) {

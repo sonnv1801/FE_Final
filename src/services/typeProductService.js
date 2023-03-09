@@ -1,5 +1,5 @@
 import Axios from 'axios';
-const API = 'http://localhost:8000/v1/typeProduct';
+const API = 'https://maizoshop.onrender.com/v1/typeProduct';
 
 export class TypeProduct {
   getAllTypeProduct() {
