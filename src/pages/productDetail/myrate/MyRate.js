@@ -7,6 +7,7 @@ import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { createCmt } from '../../../../redux/actions/comment.action';
+import RepcmtAd from '../../admin/rateAdmin/repcmtAd/RepcmtAd';
 const MyRate = ({ productDetail, fliterCMT }) => {
   const [number, setNumber] = useState(0);
   const [hoverStar, setHoverStar] = useState(undefined);
@@ -90,6 +91,7 @@ const MyRate = ({ productDetail, fliterCMT }) => {
   return (
     <div className="my-rate">
       <b>Đánh giá của bạn</b>
+      <RepcmtAd />
       <form>
         <p className="text-rate">{handleText()}</p>
         <p className="star-rate">

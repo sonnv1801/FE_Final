@@ -113,6 +113,8 @@ function ListProductAdmin() {
     dispatch(getProduct());
   }, []);
 
+  console.log(listProductAdmin.length);
+
   return (
     <div className="container-listproductAd">
       <div className="row">

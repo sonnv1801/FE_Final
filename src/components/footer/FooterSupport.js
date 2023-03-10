@@ -10,7 +10,7 @@ const FooterSupport = () => {
           <Link to="/" className="text-dark">
             <b>Tổng đài hỗ trợ</b>
             <br />
-            <span>(Từ 8:00-21:00)</span>
+            <span style={{ fontSize: '16px' }}>(Từ 8:00-21:00)</span>
           </Link>
         </li>
         {/* <li>

@@ -33,6 +33,12 @@ const LeftProductDetail = (leftProduct) => {
           ))}
         </div>
       </div>
+      <div className="banner-prd-dt">
+        <img
+          src="https://cdn.tgdd.vn/2021/06/banner/sticky-gop-390-97-390x97.png"
+          alt="Iphone"
+        />
+      </div>
     </div>
   );
 };

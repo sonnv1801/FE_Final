@@ -25,12 +25,6 @@ function ListUser() {
               <div className="col-sm-5">
                 <p>Quản lý Người dùng</p>
               </div>
-              <div className="col-sm-7">
-                <button href="#" className="btn btn-outline-danger">
-                  <i className="bx bxs-folder-plus"></i>
-                  <span>Thêm người dùng</span>
-                </button>
-              </div>
             </div>
           </div>
           <table className="table">

@@ -22,6 +22,7 @@ import ListOrderToday from './pages/admin/listOderAdmin/listordertoday/ListOrder
 import RatingAd from './pages/admin/rateAdmin/RatingAd';
 import DetailRateAd from './pages/admin/rateAdmin/detailRateAd/DetailRateAd';
 import DetailorderAd from './pages/admin/listOderAdmin/detailOrderAdmin/detailorderAd';
+import RepcmtAd from './pages/admin/rateAdmin/repcmtAd/RepcmtAd';
 
 function App() {
   const user = JSON.parse(localStorage.getItem('token'));
@@ -59,6 +60,8 @@ function App() {
               <Route path="/admin/orders" element={<ListOderAdmin />} />
               <Route path="/admin/orders/today" element={<ListOrderToday />} />
               <Route path="/admin/rate" element={<RatingAd />} />
+              <Route path="/admin/rate/cmt" element={<RepcmtAd />} />
+
               <Route
                 path="/admin/detailRating/:id"
                 element={<DetailRateAd />}

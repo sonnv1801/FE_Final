@@ -8,9 +8,10 @@
   width: 865px;
   height: 545px;
   border: 1px solid lightgray;
-  box-shadow: 3px 3px 3px 0px lightgray;
+  box-shadow: 0 3px 6px #00000029;
   border-radius: 10px;
 }
+
 .info-container .title-infor {
   color: rgb(236, 40, 40);
   margin-top: 20px;
@@ -20,6 +21,7 @@
   font-weight: 700;
   line-height: 23px;
 }
+
 .info-container .group-container .form-group {
   display: flex;
   align-items: center;
@@ -27,13 +29,16 @@
   font-size: 14px;
   margin: 20px 0px 20px 50px;
 }
+
 .info-container .group-container .form-group label {
   width: 20%;
   display: block;
 }
+
 .info-container .group-container .form-group a {
   text-decoration: underline;
 }
+
 .info-container .group-container .form-group input {
   width: 55%;
   height: 35px;
@@ -43,15 +48,18 @@
   padding-left: 15px;
   border: 1px solid #3e3e3e;
 }
+
 .info-container .group-container .form-group .gender {
   width: auto;
   margin: 0px 20px 0px 10px;
 }
+
 .info-container .group-container .form-group .birthday-infor {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
 }
+
 .info-container .group-container .form-group .birthday-infor .select {
   display: flex;
   height: 35px;
@@ -62,14 +70,17 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
 .info-container .group-container .form-group .birthday-infor .select select {
   clear: both;
   width: 100%;
 }
+
 .info-container .group-container .form-group-foot {
   display: flex;
   justify-content: center;
 }
+
 .info-container .group-container .form-group-foot button {
   margin-top: 20px;
   background: linear-gradient(180deg, #fa4d4d 0, #f84141 100%);
@@ -84,6 +95,7 @@
   cursor: pointer;
   border: none;
 }
+
 .info-container .group-container .form-group-foot button:hover {
   transition: 0.4s;
   color: black;

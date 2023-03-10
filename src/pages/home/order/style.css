@@ -2,20 +2,23 @@
   width: 100%;
   display: flex;
 }
+
 .order-page .row {
   width: 99%;
 }
+
 .oder-order {
   float: right;
   width: 98%;
 }
+
 .order-page .order-container {
   background: #fff;
   width: 100%;
   min-height: 500px;
   margin: 0 auto;
   padding: 5px;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -30,5 +33,5 @@
   font-weight: 700;
   font-size: 2rem;
   color: red;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
 }

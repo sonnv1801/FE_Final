@@ -31,15 +31,16 @@ export const NavDropDown = () => {
   const carts = JSON.parse(localStorage.getItem('carts'));
 
   const cart = useSelector((state) => state.defaultReducer.cart);
-
+  function refreshPage() {
+    setTimeout(() => {
+      window.location.reload(false);
+    }, 100);
+  }
   return (
     <Box sx={{ flexGrow: 0 }} className="nav-dropdown-app">
       <Tooltip title="Open settings">
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-          <Avatar
-            alt="Remy Sharp"
-            src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/309709135_1493122074495093_6439269344169581464_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=UtVInignv_IAX9hDO_U&tn=zKaTZRKwKrhhiTBr&_nc_ht=scontent.fdad3-4.fna&oh=00_AfAYC6A8p3ktpUJ_dKMc0wHnZ9aJEfTnuf7k5vTlmSvyyA&oe=63FF92F3"
-          />
+          <Avatar alt="Remy Sharp" src={user?.image} />
         </IconButton>
       </Tooltip>
       <Menu
@@ -68,10 +69,14 @@ export const NavDropDown = () => {
                     {`Xin chào: ${user?.fullname}`}
                   </li>
                   <li>
-                    <Link to="/admin">Zô Admin nè</Link>
+                    <Link onClick={refreshPage} to="/admin">
+                      Zô Admin nè
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/order">Lịch Sử Mua Hàng</Link>
+                    <Link to="/order" onClick={refreshPage}>
+                      Lịch Sử Mua Hàng
+                    </Link>
                   </li>
                 </div>
               ) : (

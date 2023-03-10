@@ -8,7 +8,7 @@
   color: red;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
 }
 
 .payment-container {
@@ -16,7 +16,7 @@
   min-height: 500px;
   /* background: pink; */
   margin: 0 auto;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 5px;

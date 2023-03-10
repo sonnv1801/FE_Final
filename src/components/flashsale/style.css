@@ -11,8 +11,8 @@
     text-shadow: 1px 1px 7px;
     border-radius: 15px;
     border: 2px solid silver;
-    box-shadow: 0 0 5px 25px;
-    /* margin: 0; */
+    box-shadow: 0 3px 6px #00000029
+        /* margin: 0; */
 
 
 }

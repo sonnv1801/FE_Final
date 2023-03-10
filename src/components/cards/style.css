@@ -8,7 +8,7 @@
 }
 
 .container-card:hover {
-  box-shadow: #e10c00 0px 2px 1px;
+  box-shadow: 0 3px 6px #00000029;
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@ a {
 .card {
   /* width: 200px; */
   float: left;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0 3px 6px #00000029;
   position: relative;
 }
 
@@ -95,8 +95,7 @@ a {
 .card .voucher {
   width: 55px;
   background-color: yellow;
-  box-shadow: rgb(60 64 67 / 10%) 0px 1px 0px 0px,
-    rgb(60 64 67 / 15%) 0px 2px 3px 2px;
+  box-shadow: 0 3px 6px #00000029;
   position: absolute;
   top: 0;
   right: 0;

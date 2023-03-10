@@ -3,13 +3,17 @@ import './style.css';
 import logo from '../../../assets/logo.png';
 import { Link } from 'react-router-dom';
 function Sidebar() {
+  const currentUser = JSON.parse(localStorage.getItem('token'));
   return (
     <>
       <div className="sidebar-container">
-        <div className="title-admin">
-          <img className="logo-sidebar" src={logo} alt="..." />
-          <p>Quản trị viên: Philip</p>
-        </div>
+        <Link to={'/admin'}>
+          <div className="title-admin">
+            <img className="logo-sidebar" src={logo} alt="..." />
+            <p>{currentUser.fullname}</p>
+          </div>
+        </Link>
+
         <ul className="nav-link-sidebar">
           <li>
             <Link to={'/admin/user'}>

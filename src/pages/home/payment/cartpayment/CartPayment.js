@@ -79,23 +79,24 @@ export const CartPayment = () => {
         <div className="body-payment">
           <div className="infomation-users">
             <Form.Group className="formgroup-body">
-              <Form.Label>Họ và tên: </Form.Label>
+              <Form.Label>Email: </Form.Label>
+              <Form.Control disabled type="address" value={user.email} />
+              <Form.Label>Họ và tên:* </Form.Label>
               <Form.Control
                 type="text"
                 required
                 onChange={handleChange('fullname')}
                 // value={user.fullname}
               />
-              <Form.Label>Số điện thoại: </Form.Label>
+              <Form.Label>Số điện thoại:* </Form.Label>
               <Form.Control
                 type="number"
                 required
                 onChange={handleChange('phone')}
                 // value={user.phone}
               />
-              <Form.Label>Email: </Form.Label>
-              <Form.Control disabled type="address" value={user.email} />
-              <Form.Label>Address: </Form.Label>
+
+              <Form.Label>Address:* </Form.Label>
               <Form.Control
                 type="text"
                 required
@@ -119,7 +120,7 @@ export const CartPayment = () => {
                   <tr key={index}>
                     <td>
                       {item?.title}
-                      <span className="quantity-prd-payment">{`X${item?.quantity_cart}`}</span>
+                      <span className="quantity-prd-payment">{` X${item?.quantity_cart}`}</span>
                     </td>
                     <td>{`${item?.newPrice?.toLocaleString()}đ`}</td>
                   </tr>
@@ -135,15 +136,15 @@ export const CartPayment = () => {
               <span> {`${renderAmount()?.toLocaleString()}đ`}</span>
             </div>
             <span className="term">
-              <input type="checkbox" />
+              <input type="checkbox" checked />
               Tôi đồng ý điều khoản của website
             </span>
-            <span className="term">
+            {/* <span className="term">
               <input type="radio" name="ship" />
               Chuyển khoản ngân hàng
-            </span>
+            </span> */}
             <span className="term">
-              <input type="radio" name="ship" />
+              <input type="radio" name="ship" checked />
               Trả tiền mặt khi giao hàng
             </span>
             <button className="order-payment" onClick={handleCheckout}>

@@ -1,0 +1,32 @@
+.box-cmt {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1rem;
+
+    /* min-height: 200px; */
+}
+
+.box-cmt .card-cmt .head-card-cmt {
+    display: flex;
+}
+
+.box-cmt .card-cmt .head-card-cmt h6 {
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+
+
+.box-cmt .card-cmt .rounded-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-clr);
+}
+
+.box-cmt .card-cmt .rep-cmt-ad {
+    width: 80%;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 7px;
+    margin-left: 4rem;
+    padding: 0.5rem;
+}

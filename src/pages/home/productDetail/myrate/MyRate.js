@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import Swal from 'sweetalert2';
 import { FaStar, FaRegStar } from 'react-icons/fa';
 import { useState } from 'react';
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { createCmt } from '../../../../redux/actions/comment.action';
-const MyRate = ({ productDetail, fliterCMT }) => {
+import { useDispatch, useSelector } from 'react-redux';
+import { createCmt, getCMT } from '../../../../redux/actions/comment.action';
+const MyRate = ({ productDetail }) => {
   const [number, setNumber] = useState(0);
   const [hoverStar, setHoverStar] = useState(undefined);
   const navigate = useNavigate();
@@ -17,6 +17,17 @@ const MyRate = ({ productDetail, fliterCMT }) => {
   const customer = JSON.parse(localStorage.getItem('token'));
   const location = useLocation();
   const id = location.pathname.split('/')[2];
+  const cmts = useSelector((state) => state.defaultReducer.listCMT);
+  useEffect(() => {
+    dispatch(getCMT());
+  }, []);
+
+  const fliterCMT = cmts.filter(function (product, index, array) {
+    return product.id_product === id;
+  });
+
+  console.log(fliterCMT);
+
   const [data, setData] = useState({
     comment: '',
   });
@@ -92,51 +103,62 @@ const MyRate = ({ productDetail, fliterCMT }) => {
     <div className="my-rate">
       <b>Đánh giá của bạn</b>
       <form>
-        <p className="text-rate">{handleText()}</p>
-        <p className="star-rate">
-          {Array(5)
-            .fill()
-            .map((_, index) =>
-              number >= index + 1 || hoverStar >= index + 1 ? (
-                <AiFillStar
-                  onMouseOver={() => !number && setHoverStar(index + 1)}
-                  onMouseLeave={() => setHoverStar(undefined)}
-                  style={{ color: 'orange' }}
-                  onClick={() => setNumber(index + 1)}
-                />
-              ) : (
-                <AiOutlineStar
-                  onMouseOver={() => !number && setHoverStar(index + 1)}
-                  onMouseLeave={() => setHoverStar(undefined)}
-                  style={{ color: 'orange' }}
-                  onClick={() => setNumber(index + 1)}
-                />
-              )
-            )}
-        </p>
+        <div className="row">
+          <div className="col-12">
+            <p className="text-rate">{handleText()}</p>
+            <p className="star-rate">
+              {Array(5)
+                .fill()
+                .map((_, index) =>
+                  number >= index + 1 || hoverStar >= index + 1 ? (
+                    <AiFillStar
+                      onMouseOver={() => !number && setHoverStar(index + 1)}
+                      onMouseLeave={() => setHoverStar(undefined)}
+                      style={{ color: 'orange' }}
+                      onClick={() => setNumber(index + 1)}
+                    />
+                  ) : (
+                    <AiOutlineStar
+                      onMouseOver={() => !number && setHoverStar(index + 1)}
+                      onMouseLeave={() => setHoverStar(undefined)}
+                      style={{ color: 'orange' }}
+                      onClick={() => setNumber(index + 1)}
+                    />
+                  )
+                )}
+            </p>
+          </div>
 
-        <b>Nhận xét của bạn*</b>
-        <textarea
-          className="my-text-rate"
-          placeholder={handlePlaceHolder()}
-          onChange={handleChange('comment')}
-        ></textarea>
-        <b>Tên*</b>
-        <input
-          type="text"
-          className="my-text-rate"
-          value={customer?.fullname}
-          disabled
-          placeholder="Nhập tên của bạn..."
-        />
-        <b>Email*</b>
-        <input
-          type="email"
-          className="my-text-rate"
-          value={customer?.email}
-          disabled
-          placeholder="Nhập email của bạn ..."
-        />
+          <div className="col-6">
+            <b>Tên*</b>
+            <input
+              type="text"
+              className="my-text-rate"
+              value={customer?.fullname}
+              disabled
+              placeholder="Nhập tên của bạn..."
+            />
+          </div>
+          <div className="col-6">
+            <b>Email*</b>
+            <input
+              type="email"
+              className="my-text-rate"
+              value={customer?.email}
+              disabled
+              placeholder="Nhập email của bạn ..."
+            />
+          </div>
+          <div className="col-12">
+            <b>Nhận xét của bạn*</b>
+            <textarea
+              className="my-text-rate"
+              placeholder={handlePlaceHolder()}
+              onChange={handleChange('comment')}
+            ></textarea>
+          </div>
+        </div>
+
         {customer !== null ? (
           <button className="btn-rate" onClick={handleCMT}>
             Gửi đi

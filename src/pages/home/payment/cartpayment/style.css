@@ -28,12 +28,14 @@
 .body-payment .infomation-users {
   width: 50%;
 }
+
 .body-payment .infomation-users .formgroup-body {
   width: 80%;
 }
+
 .body-payment .infomation-product {
   width: 50%;
-  box-shadow: 3px 3px 7px 2px rgba(226, 14, 14, 0.5);
+  box-shadow: 0 3px 6px #00000029;
   background-color: rgb(253, 235, 235);
   border-radius: 16px;
   padding: 20px;
@@ -66,7 +68,7 @@
   border: none;
   font-weight: 600;
   border-radius: 8px;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
 }
 
 .infomation-product .order-payment:hover {

@@ -4,12 +4,14 @@
   box-sizing: border-box;
   font-family: var(--main-font);
 }
+
 .sidebar-container {
   width: 250px;
   margin-left: 10px;
-  box-shadow: 2px 2px 2px 2px #cac5c5;
+  box-shadow: 0 3px 6px #00000029;
   border-radius: 5px;
 }
+
 .sidebar-container .title-admin {
   width: 100%;
   height: 80px;
@@ -19,10 +21,12 @@
   background: var(--red-clr);
   border-radius: 5px;
 }
+
 .sidebar-container .title-admin .logo-sidebar {
   width: 90px;
   height: 60px;
 }
+
 .sidebar-container .title-admin p {
   margin-bottom: 1rem;
   margin-top: 15px;
@@ -33,16 +37,19 @@
   width: 100%;
   font-weight: bold;
 }
+
 .sidebar-container .nav-link-sidebar {
   margin-top: 15px;
   margin: 0;
   padding: 0;
 }
+
 .sidebar-container .nav-link-sidebar li {
   width: 100%;
   height: 50px;
   list-style: none;
 }
+
 .sidebar-container .nav-link-sidebar li a {
   height: 100%;
   width: 100%;
@@ -58,17 +65,20 @@
   border-radius: 5px;
   color: white;
 }
+
 .sidebar-container .nav-link-sidebar li a i {
   min-width: 60px;
   text-align: center;
   font-size: 30px;
 }
+
 .sidebar-container .nav-link-sidebar li a span {
   font-size: 18px;
   font-weight: 400;
   font-family: var(--main-font);
   font-weight: bold;
 }
+
 .sidebar-container .nav-link-sidebar .link-name {
   font-size: 18px;
   font-weight: 400;

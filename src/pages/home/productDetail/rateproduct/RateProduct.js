@@ -1,12 +1,14 @@
 import React from 'react';
 import './style.css';
 import StarIcon from '@mui/icons-material/Star';
+import ReactStars from 'react-rating-stars-component';
 import MyRate from '../myrate/MyRate';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCMT } from '../../../../redux/actions/comment.action';
 import { useLocation } from 'react-router-dom';
 import moment from 'moment';
+import RepcmtAd from '../../../admin/rateAdmin/repcmtAd/RepcmtAd';
 
 const rate = [
   {
@@ -62,15 +64,14 @@ const RateProduct = (productDetail) => {
     }, 0);
   };
 
-  const renderAmountRate = () => {
-    return fliterCMT?.reduce((total, item) => {
-      return (total += item.customer.rate);
-    }, 0);
-  };
-  console.log(id);
+  // const renderAmountRate = () => {
+  //   return fliterCMT?.reduce((total, item) => {
+  //     return (total += item.customer.rate);
+  //   }, 0);
+  // };
   return (
     <div className="rate-product">
-      <h4>Đánh giá & Nhận xét iPhone 14 Pro Max 128GB chính hãng VNA</h4>
+      <h4>Đánh giá & Nhận xét {productDetail?.productDetail?.title}</h4>
       <div className="header-rate">
         {/* <div className="sub-header-left">
           <b>
@@ -90,9 +91,17 @@ const RateProduct = (productDetail) => {
       </div>
 
       <div className="body-rate">
-        <p>
-          {renderAmount()} đánh giá cho iPhone 14 Pro Max 128GB chính hãng VNA
-        </p>
+        <MyRate productDetail={productDetail} fliterCMT={fliterCMT} />
+        <h4>
+          {renderAmount() === 0 ? (
+            'Chưa có đánh giá nào cho sản phẩm này'
+          ) : (
+            <>
+              {renderAmount()} đánh giá cho
+              {productDetail?.productDetail?.title}
+            </>
+          )}
+        </h4>
         <div className="sub-body-rate">
           {fliterCMT.map((item, index) => (
             <>
@@ -103,12 +112,12 @@ const RateProduct = (productDetail) => {
                       {item.customer.fullname} –
                       {moment(item.createdAt).format('DD/MM/YYYY')}
                     </span>
-                    <b>
-                      {item.customer.rate}
-                      <StarIcon />
+                    <b id="rate-comment">
+                      <ReactStars count={item.customer.rate} />
                     </b>
                   </div>
                   <p>{item.customer.comment}</p>
+                  <RepcmtAd />
                 </>
               ) : (
                 <>
@@ -117,9 +126,11 @@ const RateProduct = (productDetail) => {
                       {item.customer.fullname} –
                       {moment(item.createdAt).format('DD/MM/YYYY')}
                     </span>
-                    <b>
-                      {item.customer.rate}
-                      <StarIcon />
+                    <b id="rate-comment">
+                      <ReactStars
+                        count={item.customer.rate}
+                        fliterCMT={fliterCMT}
+                      />
                     </b>
                   </div>
                   <p>
@@ -132,7 +143,6 @@ const RateProduct = (productDetail) => {
           ))}
         </div>
       </div>
-      <MyRate productDetail={productDetail} fliterCMT={fliterCMT} />
     </div>
   );
 };

@@ -62,11 +62,11 @@ const CenterProductDetail = (ceterProduct) => {
     <div className="body-prd-dt">
       <del className="old-price">{`${formattedOldPrice}đ`}</del>
       <div className="prd-price">
-        <div className="sub-price" style={{ background: `${clicked.color}` }}>
-          <h1>{`${formattedNewPrice}đ`}</h1>
-        </div>
         <div className="sub-installment">
           <h1>Trả góp từ 6.158.000₫ / 1 tháng</h1>
+        </div>
+        <div className="sub-price" style={{ background: `${clicked.color}` }}>
+          <h1>{`${formattedNewPrice}đ`}</h1>
         </div>
       </div>
       <div className="body-orther-phone">

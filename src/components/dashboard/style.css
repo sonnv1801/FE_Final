@@ -1,26 +1,31 @@
 .container-dashboard {
-  width: 80%;
+  /* width: 80%; */
   min-height: 200px;
 }
+
 .container-dashboard .title-dashboard {
   font-size: 30px;
   font-weight: bold;
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
 .container-dashboard .group-detail-board {
   display: flex !important;
   width: 100%;
   height: 150px;
   justify-content: space-between;
 }
+
 .container-dashboard .group-detail-board ul {
   padding: 0;
   margin-left: 5px;
 }
+
 .container-dashboard .group-detail-board ul li {
   list-style: none;
 }
+
 .container-dashboard .detail-board {
   height: 100%;
   width: 24%;
@@ -30,6 +35,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .container-dashboard .detail-board .detail-info {
   height: 120px;
   width: 100%;
@@ -39,10 +45,12 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
 .container-dashboard .detail-info .left-info {
   width: 70%;
   margin: 20px;
 }
+
 .container-dashboard .detail-info i {
   float: right;
   font-size: 80px;
@@ -51,10 +59,12 @@
   opacity: 0.6;
   padding: 10px;
 }
+
 .container-dashboard .detail-info i:hover {
   transform: scale(1.15);
   transition: 0.4s ease;
 }
+
 .container-dashboard .detail-info .left-info h3 {
   color: #ffffff;
   font-family: var(--main-font);
@@ -64,6 +74,7 @@
   margin: 0px 0px 10px;
   text-align: left;
 }
+
 .container-dashboard .detail-info .left-info p {
   color: #ffffff;
   font-family: var(--main-font);
@@ -72,10 +83,12 @@
   text-align: left;
   font-size: 16px;
 }
+
 .container-dashboard .detail-board ul a {
   color: white;
   text-align: center;
 }
+
 .container-dashboard .detail-board ul a li {
   background-color: #158fa3;
   width: 100%;
@@ -84,4 +97,51 @@
   font-size: 20px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.cotainer-admin {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container-length {
+  background: #158fa3;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 1rem;
+
+}
+
+.container-length .sub-length {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid orange;
+}
+
+.container-length .sub-length span {
+  font-size: 20px;
+}
+
+.container-length .sub-length i {
+  font-size: 3rem;
+}
+
+
+.container-length .sub-length h4 {
+  font-size: 50px;
+}
+
+.container-length .sub-more {
+  background: #158fa3;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.container-length .sub-more a {
+  color: white;
+}
+
+.container-length .sub-more a:hover {
+  color: blue;
 }

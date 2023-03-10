@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { getCMT } from '../../../../redux/actions/comment.action';
 import { useLocation } from 'react-router-dom';
 import moment from 'moment';
+import RepcmtAd from '../../admin/rateAdmin/repcmtAd/RepcmtAd';
 
 const rate = [
   {
@@ -91,6 +92,7 @@ const RateProduct = (productDetail) => {
       </div>
       <div className="vote-rate">
         <h1>Hãy cho tôi biết ý kiến của bạn</h1>
+
         <button>Gửi đánh giá</button>
       </div>
       <div className="body-rate">

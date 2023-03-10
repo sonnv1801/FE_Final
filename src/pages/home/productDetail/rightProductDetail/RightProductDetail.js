@@ -11,7 +11,7 @@ const RightProductDetail = () => {
             <PinDropRoundedIcon />
             Nghĩa Trung, Tư Nghĩa, Quảng Ngãi: 0375521434 | 0869176474
           </li>
-          <li>
+          {/* <li>
             <PinDropRoundedIcon />
             Nghĩa Trung, Tư Nghĩa, Quảng Ngãi: 0375521434 | 0869176474
           </li>
@@ -22,7 +22,7 @@ const RightProductDetail = () => {
           <li>
             <PinDropRoundedIcon />
             Nghĩa Trung, Tư Nghĩa, Quảng Ngãi: 0375521434 | 0869176474
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="offer-area">
@@ -58,7 +58,7 @@ const RightProductDetail = () => {
       </div>
       <div className="banner-prd-dt">
         <img
-          src="https://clickbuy.com.vn/uploads/2023/02/slide-valentine-day-iphone-01.png"
+          src="https://cdn.sforum.vn/sforum/wp-content/uploads/2020/11/127468139_655624531742632_4058878825504183841_n.jpg"
           alt="Iphone"
         />
       </div>

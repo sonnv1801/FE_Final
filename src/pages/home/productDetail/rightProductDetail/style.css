@@ -4,7 +4,7 @@
 
 .right-prd-dt .address-area {
   overflow: auto;
-  height: 150px;
+  /* height: 150px; */
   margin-top: 1rem;
 }
 
@@ -22,7 +22,7 @@
 
 .right-prd-dt .address-area::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px 0 3px 6px #00000029;
   background-color: gray;
 }
 
@@ -83,6 +83,7 @@
   padding-right: 1rem;
   color: black;
 }
+
 .right-prd-dt .installment-btn {
   display: flex;
 }
@@ -117,6 +118,7 @@
   display: block;
   font-size: 15px;
 }
+
 .right-prd-dt .banner-prd-dt img {
   width: 100%;
   margin-top: 1rem;

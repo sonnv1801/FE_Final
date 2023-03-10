@@ -21,7 +21,7 @@
   background-color: white;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 50%);
+  box-shadow: 0 3px 6px #00000029;
 }
 
 .container-listproductAd .row .col-sm-7 button {
@@ -49,7 +49,7 @@
 }
 
 .container-listproductAd .table tbody tr td img {
-  width: 100%;
+  width: 30%;
 }
 
 .container-listproductAd .table tbody tr td p {

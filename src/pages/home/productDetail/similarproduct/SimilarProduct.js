@@ -21,7 +21,7 @@ const SimilarProduct = (productSimilar) => {
             Sản phẩm tương tự
           </button>
         </li>
-        <li className="nav-item" role="presentation">
+        {/* <li className="nav-item" role="presentation">
           <button
             className="nav-link"
             id="pills-profile-tab"
@@ -34,7 +34,7 @@ const SimilarProduct = (productSimilar) => {
           >
             Phụ kiện mua cùng
           </button>
-        </li>
+        </li> */}
       </ul>
       <div className="tab-content" id="pills-tabContent">
         <div
