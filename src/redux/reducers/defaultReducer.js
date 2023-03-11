@@ -219,6 +219,13 @@ const defaultReducer = (state = initialState, action) => {
       if (index !== -1) {
         cart[index].quantity_cart += 1;
         Swal.fire('Đã thêm một sản phẩm trùng tên vào giỏ!', 'success');
+      }
+      if (
+        cart.id === action.payload.id &&
+        cart.color === action.payload.color &&
+        cart.store === action.payload.store
+      ) {
+        cart[index].quantity_cart += 1;
       } else {
         cart = [...cart, action.payload];
         Swal.fire('Sản phẩm đã được thêm vào giỏ!', 'success');

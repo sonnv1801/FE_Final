@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import { updateUser } from '../../../../redux/actions/user.action';
 import './style.css';
 function InforUser() {
@@ -14,14 +15,20 @@ function InforUser() {
 
   const handleProfile = (e) => {
     e.preventDefault();
-    const newUser = {
-      fullname: fullname,
-      phone: phone,
-      address: address,
-    };
-    dispatch(updateUser(user._id, newUser, user?.accessToken));
-    localStorage.removeItem('token');
-    navigate('/login');
+    if (fullname !== '' && phone !== '' && address !== '') {
+      const newUser = {
+        fullname: fullname,
+        phone: phone,
+        address: address,
+      };
+      dispatch(updateUser(user._id, newUser, user?.accessToken));
+      localStorage.removeItem('token');
+      setTimeout(() => {
+        navigate('/login');
+      }, 1000);
+    } else {
+      Swal.fire('Nhập đầy đủ...', '', 'warning');
+    }
   };
 
   // const [profile, setProfile] = useState({

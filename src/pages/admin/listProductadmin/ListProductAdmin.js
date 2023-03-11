@@ -17,9 +17,13 @@ import {
 } from '../../../redux/actions/product.action';
 import { Link } from 'react-router-dom';
 import Sidebar from '../sidebaradmin/Sidebar';
+import { getAllTypeProduct } from '../../../redux/actions/typeProduct.action';
 function ListProductAdmin() {
   const [showadd, setShowadd] = useState(false);
   const currentUser = JSON.parse(localStorage.getItem('token'));
+  const dispatch = useDispatch();
+  const listTypeAdmin = useSelector((state) => state.defaultReducer.listType);
+
   const isLoading = useSelector((state) => state.defaultReducer.isLoading);
   const [data, setData] = useState({
     title: '',
@@ -103,14 +107,16 @@ function ListProductAdmin() {
     setShowadd(false);
   };
 
-  const dispatch = useDispatch();
-
   const listProductAdmin = useSelector(
     (state) => state.defaultReducer.listProduct
   );
 
   useEffect(() => {
     dispatch(getProduct());
+  }, []);
+
+  useEffect(() => {
+    dispatch(getAllTypeProduct());
   }, []);
 
   console.log(listProductAdmin.length);
@@ -218,10 +224,17 @@ function ListProductAdmin() {
               aria-label="Default select example"
               onChange={handleChange('type')}
             >
-              <option>Chọn loại sản phẩm</option>
+              <option selected>Chọn loại sản phẩm</option>
+
+              {listTypeAdmin?.map((item, index) => (
+                <option value={item.name} key={index}>
+                  {item.name}
+                </option>
+              ))}
+              {/* <option>Chọn loại sản phẩm</option>
               <option value="Iphone">Iphone</option>
               <option value="Samsung">Samsung</option>
-              <option value="Ipad">Ipad</option>
+              <option value="Ipad">Ipad</option> */}
             </Form.Select>
             <Form.Label>Mô tả sản phẩm: </Form.Label>
             <textarea

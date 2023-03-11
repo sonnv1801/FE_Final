@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
@@ -8,7 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
-import CartNav from '../cartnav/CartNav';
 import { useSelector } from 'react-redux';
 export const NavDropDown = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -27,8 +26,6 @@ export const NavDropDown = () => {
   };
 
   const user = JSON.parse(localStorage.getItem('token'));
-
-  const carts = JSON.parse(localStorage.getItem('carts'));
 
   const cart = useSelector((state) => state.defaultReducer.cart);
   function refreshPage() {
@@ -74,6 +71,9 @@ export const NavDropDown = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/profile">Trang cá nhân</Link>
+                  </li>
+                  <li>
                     <Link to="/order" onClick={refreshPage}>
                       Lịch Sử Mua Hàng
                     </Link>
@@ -92,7 +92,6 @@ export const NavDropDown = () => {
                   </li>
                 </div>
               )}
-              <CartNav cart={cart} />
 
               <Button textalign="center" onClick={handlelogout}>
                 Đăng Xuất
@@ -103,7 +102,6 @@ export const NavDropDown = () => {
               <Link to="/login" textalign="center">
                 Đăng nhập
               </Link>
-              <CartNav cart={cart} />
             </div>
           )}
         </MenuItem>

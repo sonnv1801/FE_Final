@@ -34,11 +34,16 @@
   margin-left: 15px;
   width: 60px;
   height: 60px;
-  background-image: url("https://img.meta.com.vn/Data/image/2021/04/12/sinh-nhat-bac-ho-3.jpg");
+  /* background-image: url("https://img.meta.com.vn/Data/image/2021/04/12/sinh-nhat-bac-ho-3.jpg"); */
   background-size: cover;
   border-radius: 50%;
   border: 2px solid var(--color-white);
   justify-content: center;
+}
+
+.sidebar .title_sidebar .avarta-sidebar img {
+  width: 100%;
+  border-radius: 30px;
 }
 
 .sidebar .title_sidebar .username-sidebar {

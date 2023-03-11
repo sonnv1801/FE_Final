@@ -78,7 +78,7 @@ const Shop = () => {
   }
   return (
     <>
-      <NavProduct />
+      {/* <NavProduct /> */}
       <div className="shop-container">
         <MenuShop typeShop={listProductType} />
         <BodyProduct />

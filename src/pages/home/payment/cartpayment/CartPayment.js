@@ -19,11 +19,22 @@ export const CartPayment = () => {
     }, 0);
   };
 
+  const [ship, setShip] = useState('');
+  const [termsChecked, setTermsChecked] = useState(false);
+  function handleRadioChange(event) {
+    setShip(event.target.value);
+  }
+
+  function handleCheckboxChange(event) {
+    setTermsChecked(event.target.checked);
+  }
+
   const [data, setData] = useState({
     fullname: '',
     phone: '',
     address: '',
     notes: '',
+    checked: null,
   });
 
   const handleChange = (name) => (e) => {
@@ -33,9 +44,13 @@ export const CartPayment = () => {
 
   const handleCheckout = async () => {
     try {
-      if (data.fullname === '' && data.phone === '' && data.address === '') {
-        Swal.fire('Nhập Đầy Đủ Thông Tin?', 'error');
-      } else {
+      if (
+        data.fullname !== '' &&
+        data.phone !== '' &&
+        data.address !== '' &&
+        ship !== '' &&
+        termsChecked !== false
+      ) {
         const cartItems = JSON.parse(localStorage.getItem('carts')) || [];
         const customer = JSON.parse(localStorage.getItem('token')) || [];
         const order = {
@@ -66,6 +81,8 @@ export const CartPayment = () => {
         localStorage.removeItem('carts');
         // console.log(response);
         setOrder(response.customer);
+      } else {
+        Swal.fire('Nhập Đầy Đủ Thông Tin?', 'error');
       }
 
       // navigate('/');
@@ -136,7 +153,11 @@ export const CartPayment = () => {
               <span> {`${renderAmount()?.toLocaleString()}đ`}</span>
             </div>
             <span className="term">
-              <input type="checkbox" checked />
+              <input
+                type="checkbox"
+                checked={termsChecked}
+                onChange={handleCheckboxChange}
+              />
               Tôi đồng ý điều khoản của website
             </span>
             {/* <span className="term">
@@ -144,7 +165,13 @@ export const CartPayment = () => {
               Chuyển khoản ngân hàng
             </span> */}
             <span className="term">
-              <input type="radio" name="ship" checked />
+              <input
+                type="radio"
+                name="ship"
+                checked={ship === 'ship'}
+                value="ship"
+                onChange={handleRadioChange}
+              />
               Trả tiền mặt khi giao hàng
             </span>
             <button className="order-payment" onClick={handleCheckout}>

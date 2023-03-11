@@ -19,6 +19,7 @@ import { NavDropDown } from './navdropdown/NavDropDown';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchProduct } from '../../redux/actions/product.action';
 import MediaCard from '../cards/Card';
+import CartNav from './cartnav/CartNav';
 
 const pages = [
   'Gọi mua hàng: 037 5521 434',
@@ -78,6 +79,7 @@ function Nav(admin) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const cart = useSelector((state) => state.defaultReducer.cart);
 
   return (
     <>
@@ -181,6 +183,7 @@ function Nav(admin) {
                 </Button>
               ))}
             </Box>
+            <CartNav cart={cart} />
             <NavDropDown />
           </Toolbar>
         </Container>

@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import numeral from 'numeral';
+import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
 import './style.css';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -62,9 +63,14 @@ export default function CartNav(cart) {
     <div className="carts-nav">
       <Button
         onClick={handleOpen}
-        style={{ margin: '0.5rem 0', background: 'none', color: 'black' }}
+        style={{
+          margin: '0.5rem 0',
+          background: 'none',
+          color: 'white',
+          paddingRight: '1rem',
+        }}
       >
-        Giỏ Hàng {`(${renderQuantity()})`}
+        <AddShoppingCartOutlinedIcon /> {`(${renderQuantity()})`}
       </Button>
       <Modal
         keepMounted
