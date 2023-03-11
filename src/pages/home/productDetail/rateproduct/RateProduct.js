@@ -119,26 +119,25 @@ const RateProduct = (productDetail) => {
                   <p>{item.customer.comment}</p>
                   <RepcmtAd />
                 </>
-              ) : (
-                <>
-                  <div className="info-rate" key={index}>
-                    <span>
-                      {item.customer.fullname} –
-                      {moment(item.createdAt).format('DD/MM/YYYY')}
-                    </span>
-                    <b id="rate-comment">
-                      <ReactStars
-                        count={item.customer.rate}
-                        fliterCMT={fliterCMT}
-                      />
-                    </b>
-                  </div>
-                  <p>
-                    Đánh Giá Này Của User <i>{item.customer.fullname}</i> - Đang
-                    Được Duyệt
-                  </p>
-                </>
-              )}
+              ) : // <>
+              //   <div className="info-rate" key={index}>
+              //     <span>
+              //       {item.customer.fullname} –
+              //       {moment(item.createdAt).format('DD/MM/YYYY')}
+              //     </span>
+              //     <b id="rate-comment">
+              //       <ReactStars
+              //         count={item.customer.rate}
+              //         fliterCMT={fliterCMT}
+              //       />
+              //     </b>
+              //   </div>
+              //   <p>
+              //     Đánh Giá Này Của User <i>{item.customer.fullname}</i> - Đang
+              //     Được Duyệt
+              //   </p>
+              // </>
+              null}
             </>
           ))}
         </div>
