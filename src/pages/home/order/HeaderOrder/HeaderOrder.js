@@ -55,7 +55,7 @@ export const HeaderOrder = () => {
               <p>
                 {item.status === 0
                   ? 'Đang Chờ Xử Lý'
-                  : 'Đã Xử Lý - Vui Lòng Ra Cửa Hàng Gần Nhất Để Nhận'}
+                  : 'Đơn Hàng Đã Xử Lý'}
               </p>
               <span>Mã Đơn {index} </span>
               <b>{item._id}</b>
