@@ -78,7 +78,7 @@ const Shop = () => {
   }
   return (
     <>
-      {/* <NavProduct /> */}
+      <NavProduct />
       <div className="shop-container">
         <MenuShop typeShop={listProductType} />
         <BodyProduct />
@@ -118,11 +118,23 @@ const Shop = () => {
                   >
                     <h1>Danh Sách Sản Phẩm</h1>
                   </div>
-                  {listProductType.map((item, index) => (
-                    <div className="col-3 mb-2" key={index}>
-                      <MediaCard card={item} />
+                  {listProductType.length === 0 ? (
+                    <div
+                      clasName="alert alert-warning"
+                      role="alert"
+                      style={{ textAlign: 'center', fontSize: '20px' }}
+                    >
+                      Hiện Tại Chưa Có Sản Phẩm Nào
                     </div>
-                  ))}
+                  ) : (
+                    <>
+                      {listProductType.map((item, index) => (
+                        <div className="col-3 mb-2" key={index}>
+                          <MediaCard card={item} />
+                        </div>
+                      ))}
+                    </>
+                  )}
                 </>
               )}
             </div>

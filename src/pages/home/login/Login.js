@@ -11,7 +11,6 @@ function Login() {
   const messerr = useSelector((state) => state.defaultReducer.login.error);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  console.log(messerr);
   const handleLogin = (e) => {
     e.preventDefault();
     if (username !== '' && password !== '') {

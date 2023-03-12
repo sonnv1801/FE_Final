@@ -28,8 +28,13 @@ const LeftProductDetail = (leftProduct) => {
       <div className="image-prd">
         <img src={leftProduct.leftProduct?.image} alt="Iphone" />
         <div className="sub-image-prd">
-          {imgs.map((img) => (
-            <img src={img.url} alt="Iphone" onClick={() => setMainImage(img)} />
+          {imgs.map((img, index) => (
+            <img
+              key={index}
+              src={img.url}
+              alt="Iphone"
+              onClick={() => setMainImage(img)}
+            />
           ))}
         </div>
       </div>

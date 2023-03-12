@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './style.css';
 function Menu() {
   const user = JSON.parse(localStorage.getItem('token'));
@@ -37,10 +37,10 @@ function Menu() {
             </a>
           </div> */}
           <div className="item">
-            <a href="#!">
+            <Link to="/order">
               <i className="	fa fa-file-text"></i>
               Đơn đặt hàng
-            </a>
+            </Link>
           </div>
           {/* <div className="item">
             <a href="#!">
@@ -74,7 +74,7 @@ function Menu() {
           </div> */}
           <div className="item">
             <a href="#!" onClick={handlelogout}>
-              <i class="fa fa-sign-out"></i>
+              <i className="fa fa-sign-out"></i>
               Thoát
             </a>
           </div>

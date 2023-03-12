@@ -35,8 +35,6 @@ const CenterProductDetail = (ceterProduct) => {
   const color = ceterProduct.ceterProduct?.colors;
   const store = ceterProduct.ceterProduct?.stores;
 
-  console.log(ceterProduct.ceterProduct);
-
   const [selectColor, setSelectColor] = useState('');
   const [selectStore, setSelectStore] = useState('');
   const handleAddCart = (e) => {

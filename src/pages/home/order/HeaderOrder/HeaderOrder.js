@@ -53,9 +53,7 @@ export const HeaderOrder = () => {
           {fliterOrder.map((item, index) => (
             <div className="sub-header-order" key={index}>
               <p>
-                {item.status === 0
-                  ? 'Đang Chờ Xử Lý'
-                  : 'Đơn Hàng Đã Xử Lý'}
+                {item.status === 0 ? 'Đang Chờ Xử Lý' : 'Đơn Hàng Đã Xử Lý'}
               </p>
               <span>Mã Đơn {index} </span>
               <b>{item._id}</b>

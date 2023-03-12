@@ -85,7 +85,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/user'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>
@@ -107,7 +107,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/product'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>
@@ -129,7 +129,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/type'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>
@@ -151,7 +151,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/orders'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>
@@ -173,7 +173,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/orders/today'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>
@@ -195,7 +195,7 @@ function Dashboard() {
               <div className="sub-more">
                 <Link to={'/admin/rate'}>
                   <b>
-                    Xem Thêm <i class="fa fa-arrow-circle-o-right"></i>
+                    Xem Thêm <i className="fa fa-arrow-circle-o-right"></i>
                   </b>
                 </Link>
               </div>

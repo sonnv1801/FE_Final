@@ -3,7 +3,6 @@ import './style.css';
 import logo from '../../../../assets/logo.png';
 import moment from 'moment';
 function RepcmtAd(fliterCMT) {
-  console.log('fliterCMT', fliterCMT.fliterCMT);
   return (
     <div className="box-cmt">
       {/* {fliterCMT.fliterCMT?.map((item, index) => ( */}

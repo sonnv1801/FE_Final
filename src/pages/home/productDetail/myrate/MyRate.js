@@ -26,8 +26,6 @@ const MyRate = ({ productDetail }) => {
     return product.id_product === id;
   });
 
-  console.log(fliterCMT);
-
   const [data, setData] = useState({
     comment: '',
   });

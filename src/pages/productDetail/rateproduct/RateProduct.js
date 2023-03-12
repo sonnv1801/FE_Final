@@ -68,7 +68,6 @@ const RateProduct = (productDetail) => {
       return (total += item.customer.rate);
     }, 0);
   };
-  console.log('cmts', cmts);
 
   return (
     <div className="rate-product">
@@ -104,7 +103,7 @@ const RateProduct = (productDetail) => {
             <>
               {item.status !== 0 ? (
                 <>
-                  <div className="info-rate">
+                  <div className="info-rate" key={index}>
                     <span>
                       {item.customer.fullname} –
                       {moment(item.createdAt).format('DD/MM/YYYY')}
@@ -118,7 +117,7 @@ const RateProduct = (productDetail) => {
                 </>
               ) : (
                 <>
-                  <div className="info-rate">
+                  <div className="info-rate" key={index}>
                     <span>
                       {item.customer.fullname} – {item.createdAt}
                     </span>
