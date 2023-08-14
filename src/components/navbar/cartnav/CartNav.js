@@ -172,7 +172,7 @@ export default function CartNav(cart) {
                 <div className="col-6">
                   <p>
                     <span>Tổng Tiền:</span>
-                    {`${renderAmount().toLocaleString()}đ`}
+                    {`${numeral(renderAmount()).format('0,0')}đ`}
                   </p>
                   <p>
                     <button type="submit" id="btn-pay" onClick={handleBuyNow}>

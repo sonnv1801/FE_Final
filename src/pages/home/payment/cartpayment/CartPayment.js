@@ -5,6 +5,7 @@ import './style.css';
 import Swal from 'sweetalert2';
 import { useDispatch } from 'react-redux';
 import { createOrder } from '../../../../redux/actions/order.action';
+import numeral from 'numeral';
 
 export const CartPayment = () => {
   const carts = JSON.parse(localStorage.getItem('carts'));
@@ -139,7 +140,7 @@ export const CartPayment = () => {
                       {item?.title}
                       <span className="quantity-prd-payment">{` X${item?.quantity_cart}`}</span>
                     </td>
-                    <td>{`${item?.newPrice?.toLocaleString()}đ`}</td>
+                    <td>{`${numeral(item?.newPrice).format('0,0')}đ`}</td>
                   </tr>
                 </tbody>
               ))}
@@ -150,7 +151,7 @@ export const CartPayment = () => {
             </div>
             <div className="total-payment">
               <span>Tổng:</span>
-              <span> {`${renderAmount()?.toLocaleString()}đ`}</span>
+              <span>{`${numeral(renderAmount()).format('0,0')}đ`}</span>
             </div>
             <span className="term">
               <input

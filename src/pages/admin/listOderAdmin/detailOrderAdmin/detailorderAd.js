@@ -10,6 +10,7 @@ import { getProduct } from '../../../../redux/actions/product.action';
 
 import Sidebar from '../../sidebaradmin/Sidebar';
 import './style.css';
+import numeral from 'numeral';
 function DetailorderAd() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -107,10 +108,12 @@ function DetailorderAd() {
                 <tr key={index}>
                   <td>{item.title}</td>
                   <td>{item.quantity}</td>
-                  <td>{item.newPrice?.toLocaleString()}đ</td>
+                  <td>{`${numeral(item.newPrice).format('0,0')}đ`}</td>
                   <td>{item.color}</td>
                   <td>{item.store}</td>
-                  <td>{(item.quantity * item.newPrice).toLocaleString()}đ</td>
+                  <td>
+                    {`${numeral(item.quantity * item.newPrice).format('0,0')}đ`}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -137,7 +140,10 @@ function DetailorderAd() {
             <div className="row">
               <div className="col-sm-6">
                 <h5>Tiền thu người nhận</h5>
-                <h1>Thu: {renderAmount()?.toLocaleString()}đ</h1>
+                <h1>
+                  Thu:
+                  {`${numeral(renderAmount()).format('0,0')}đ`}
+                </h1>
                 <br />
               </div>
               <div className="col-sm-6">

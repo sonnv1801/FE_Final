@@ -18,6 +18,7 @@ import {
 import { Link } from 'react-router-dom';
 import Sidebar from '../sidebaradmin/Sidebar';
 import { getAllTypeProduct } from '../../../redux/actions/typeProduct.action';
+import numeral from 'numeral';
 function ListProductAdmin() {
   const [showadd, setShowadd] = useState(false);
   const currentUser = JSON.parse(localStorage.getItem('token'));
@@ -177,7 +178,7 @@ function ListProductAdmin() {
 
                       <td>{item.type}</td>
                       <td>
-                        <p>{`${item.newPrice.toLocaleString()}đ`}</p>
+                        <p> {`${numeral(item.newPrice).format('0,0')}đ`}</p>
                       </td>
                       <td>
                         <Link to={`/admin/${item._id}`}>
