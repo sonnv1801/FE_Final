@@ -16,7 +16,7 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://clickbuy.com.vn/uploads/2023/02/slide-dat-hang-galaxy-s23-01-4.png"
+              src="https://clickbuy.com.vn/uploads/media/617-bEcZx.png?v=2"
               className="d-block w-100"
               alt="..."
             />

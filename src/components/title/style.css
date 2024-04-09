@@ -1,9 +1,8 @@
 .container-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
-
 
 .container-content h1 {
   float: left;
@@ -24,7 +23,6 @@
   background: -webkit-linear-gradient(to left, #434343, #000000);
   background: linear-gradient(to left, #434343, #000000);
 }
-
 
 .container-content .sub-content ul {
   display: flex;

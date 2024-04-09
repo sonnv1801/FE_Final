@@ -70,7 +70,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <EveryFlashSale listProducts={listProduct10Days} />
+      {/* <EveryFlashSale listProducts={listProduct10Days} /> */}
       <TitleHead typeProduct={listType} />
       {isLoading ? (
         <div

@@ -49,7 +49,7 @@ const EveryFlashSale = (listProducts) => {
     <div className="every-flash-sale">
       <div className="header-sale">
         <img
-          src="https://clickbuy.com.vn/assets/home/flash-sale-moi-ngay.png"
+          src="https://clickbuy.com.vn/uploads/media/613-hChVa.png?v=2"
           alt="sale"
         />
         <Clock />

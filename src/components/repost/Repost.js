@@ -6,15 +6,15 @@ function Repost() {
       <div className="repost">
         <div className="repost-title">Voucher today</div>
         <img
-          src="https://clickbuy.com.vn/uploads/2023/02/bpl-dat-hang-galaxy-s23-01-2.png"
+          src="https://clickbuy.com.vn/uploads/media/581-yyCOV.png"
           alt="..."
         ></img>
         <img
-          src="https://clickbuy.com.vn/uploads/2023/02/bpl-valentine-day-iphone-01.png"
+          src="https://clickbuy.com.vn/uploads/media/610-Xfllb.png"
           alt="..."
         ></img>
         <img
-          src="https://clickbuy.com.vn/uploads/2022/10/bpl-apple-watch-uu-dai-to-01.png"
+          src="https://clickbuy.com.vn/uploads/media/589-NhhYO.png"
           alt="..."
         ></img>
       </div>

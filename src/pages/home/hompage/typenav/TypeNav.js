@@ -25,7 +25,7 @@ const TypeNav = () => {
       <div className="nav-img">
         <Link to="/">
           <img
-            src="https://clickbuy.com.vn/uploads/2023/01/bgw-iphone-chinh-hang-bao-hanh-24-thang-01.png"
+            src="https://clickbuy.com.vn/uploads/media/613-hChVa.png?v=2"
             alt="...."
           />
         </Link>
